@@ -24,11 +24,13 @@ public class c6_ArrayIntro {
 
                     //   0     1    2     3      index of array elements
 
-        System.out.println(numbers [0] ); // this will print index 0 from given array
+        System.out.println( numbers [0] ); // this will print index 0 from given array
 
         int number2=numbers[1]; // this will sttore 50 inside number 2
 
         System.out.println(number2);
+
+        System.out.println( numbers[4] ); // ArrayIndexOutOfBoundsException: error
 
 
     }
