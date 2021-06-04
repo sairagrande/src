@@ -32,7 +32,7 @@ public class c4_NestedLoop {
         int totalColumn=40;
 
 
-        for (int i = 0 ; i <= totalRow ; i++){ // 0 1 10
+        for (int i = 1 ; i <= totalRow ; i++){ // 0 1 10
 
             int k=1;
             while (k <= totalColumn){
