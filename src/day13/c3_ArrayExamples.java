@@ -28,9 +28,9 @@ public class c3_ArrayExamples {
 
         //create a condition that will print min and max number from given array
 
-        int [] listOfNumber={10,0,100,-50,25,47,200};
+        int [] listOfNumber={10,0,100,-50,25,47,200,999};
 
-        //max 200
+        //max 999
         //min -50
         //to have references
         int max= listOfNumber[0]; //just assume this is max //10
@@ -38,10 +38,14 @@ public class c3_ArrayExamples {
 
         //then we will compare each element with max min variables and then reassign
 
-        for (int i=0;i < listOfNumber.length ; i++){// list0 =10 0 100 -50 ..200
+        //listOfNumber.length 8
+        //last index will be 7
+        //i < 8 =listOfNumber.length
+        //i <= 7 listOfNumber.length -1
+        for (int i=0; i < listOfNumber.length ; i++){// list0 =10 0 100 -50 ..200
 
             if (listOfNumber[i] >= max){ //0 >=10  //100 >=10 // -50>=10
-                max = listOfNumber[i]; //this will reassign max number with listofnumbers i //10 //100 // 100 .. 200
+                max = listOfNumber[i]; //this will reassign max number with listofnumbers i //10 //100 // 100 .. 999
             }
 
             if (listOfNumber[i] <= min){ //0 <= 10  //100 <=0  // -50 <=0
