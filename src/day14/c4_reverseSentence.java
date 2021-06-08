@@ -37,14 +37,16 @@ public class c4_reverseSentence {
         //split method returning an array
         String [] splitSentence2=sentence2.split("");//this will split from each letter
         System.out.println(Arrays.toString(splitSentence2));//[J, a, v, a,  , i, s,  , f, u, n]
+        //length is 11
+        //last index is 10
 
         String reverseSentence2="";
         //starting point last index beacuse i wanna print reverse way
-        for (int i= splitSentence2.length-1;i>=0 ; i--){ // 2 1 0
-            reverseSentence2 += splitSentence2[i]; //fun is Java
-            System.out.println("in loop -->"+reverseSentence2);
+        for (int i= splitSentence2.length-1 ;i>=0 ; i--){ // 10 9 8 7 6 ... 0
+            reverseSentence2 += splitSentence2[i];
+            System.out.println("in loop -->"+reverseSentence2);//nuf si avaJ
         }
-        System.out.println(reverseSentence2); //fun is java
+        System.out.println(reverseSentence2); //nuf si avaJ
 
     }
 }
