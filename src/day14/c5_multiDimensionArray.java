@@ -63,6 +63,27 @@ public class c5_multiDimensionArray {
         System.out.println(Arrays.toString(girlsNAme));
 
 
+        System.out.println("+++++++++++++++++++++++++++++++++");
+                        //01    01      0    0     01
+        int [][] ch={ {1,2} , {3,4} , {5} ,{6} , {10,9}  };
+                  //     0  ,     1  ,  2  , 3  ,  4
+
+        System.out.println(ch[3][0]); //6
+        System.out.println(ch[4][1]); //9
+
+
+        int [][][] ch3d={  { {5,4,1},{4,23} }, { {3},{2} } , { {0} }  };
+                    //         0              ,       1     ,    2
+                            //0 ,1                0 1       ,    0
+                             // 012  01       ,  0  0           0
+
+        System.out.println(ch3d[0][0][0]);//5
+
+        System.out.println(ch3d[2][0][0]); //0
+
+        System.out.println(ch3d[2][0]);//this is still an array whihc has one number
+        //to be able to print you need to use toString method otherwise you will see hashcode
+        System.out.println(Arrays.toString(ch3d[2][0])); //[0]
 
     }
 }
