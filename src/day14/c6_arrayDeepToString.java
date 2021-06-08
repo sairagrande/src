@@ -10,6 +10,7 @@ public class c6_arrayDeepToString {
 
         int [][] arr2={{1,2},{2,3},{4}};
         System.out.println(Arrays.toString(arr2[0]));//[1, 2]
+        System.out.println(Arrays.toString(arr2[2]));//[4]
 
         System.out.println(Arrays.toString(arr2 ));//[[I@5cad8086, [I@6e0be858, [I@61bbe9ba]
 
