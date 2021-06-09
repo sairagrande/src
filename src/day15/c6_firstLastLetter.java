@@ -33,9 +33,9 @@ public class c6_firstLastLetter {
         System.out.println(Arrays.toString(nameList));
 
         //and print first and last letter from each string
-
+        String firstLastLetters="";
         for (String eachName : nameList){
-            String firstLastLetters=""+eachName.charAt(0) + eachName.charAt(eachName.length()-1);
+            firstLastLetters = "" + eachName.charAt(0) + eachName.charAt(eachName.length()-1);
             System.out.println(firstLastLetters);
         }
     }
