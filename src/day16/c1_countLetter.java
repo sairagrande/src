@@ -12,8 +12,8 @@ public class c1_countLetter {
         //JavA
         //output should be 2
 
-        String sentence="JavA is fun,javAscript is also fun,python is fun";
-        sentence = sentence.toLowerCase(); //java is fun,javascript is also fun,python is fun
+        String sentence="JavA is fun,javAscript is also Fun,python is fun";
+        //sentence = sentence.toLowerCase(); //java is fun,javascript is also fun,python is fun
 
         System.out.println(sentence);
 
@@ -26,7 +26,7 @@ public class c1_countLetter {
         int countLetterF=0;
 
         for (String eachLetter : letters){
-            if (eachLetter.equals("a")){
+            if (eachLetter.equalsIgnoreCase("a")){
                 countLetterA++;
             }
 
