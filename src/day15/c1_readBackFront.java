@@ -14,6 +14,14 @@ public class c1_readBackFront {
         int[] numbers={0,1,2,2,1,0};
         //int[] numbers={0,1,2,2,1,0};
                      //0,1,2,3,4,5  index numbers
+
+        // {2 3 3 2}
+        // 2  3  3 2
+        //numbers[0]==numbers[3]
+        //numbers[1]==numbers[2]
+        //numbers[2]==numbers[1]
+        //numbers[3]==numbers[0]
+
         //total length is 6
         //last index will be 5
         //in this case to achive for same result from front and back we need compare index numbers
@@ -35,10 +43,13 @@ public class c1_readBackFront {
 
         boolean b1=true;
 
+        System.out.println(b1);
+
         int k =0;
         for (int i= numbers.length-1 ; i>=0; i--){ //5,4,3,2,1,0
 
-            if (numbers[i] != numbers[k]){ // numbers[5]==numbers[0]  0==0
+            if (numbers[i] != numbers[k]){ // numbers[5]!=numbers[0]  0==0   numbers4 != number 1  number3 != number2
+
                 b1=false;
                 break;
             }else {
