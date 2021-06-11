@@ -1,5 +1,7 @@
 package day16;
 
+import java.util.Scanner;
+
 public class c3_MethodsWithParameters {
 
     //decleration of the method
@@ -22,6 +24,12 @@ public class c3_MethodsWithParameters {
         ageCategory(100);
 
         ageCategory(-67);
+
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter your age : ");
+
+        int number=scanner.nextInt();
+        ageCategory(number); // this number will be assgined to int age that we have inside agecoategory
     }
 
     public static void hello(){
