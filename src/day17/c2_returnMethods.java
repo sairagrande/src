@@ -55,6 +55,12 @@ public class c2_returnMethods {
 //        int result3=minNum(8,9);  this method return type is void not int
         //you cant store in int
 
+
+
+        addition(10,65);
+        int result3=addition2(10,65);
+        System.out.println(result3);
+
     }
 
     public static int division(int i1 , int i2){
@@ -70,4 +76,15 @@ public class c2_returnMethods {
         return i1/i2;
     }
 
+    //create a return method that will print addition of 2 number
+    //number1 + number2
+
+    public  static void addition(int number1 , int number2){
+        System.out.println(number1+number2);
+    }
+
+    public static int addition2(int number1 , int number2){
+
+        return number1+number2;
+    }
 }
