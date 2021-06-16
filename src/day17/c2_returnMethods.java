@@ -61,6 +61,10 @@ public class c2_returnMethods {
         int result3=addition2(5,5);
         System.out.println(result3);
 
+        byte b1=5;
+        byte b2=5;
+        int result4=addition3(b1,b2);
+
     }
 
 
@@ -86,6 +90,11 @@ public class c2_returnMethods {
     }
 
     public static int addition2(int number1 , int number2){
+
+        return number1+number2;
+    }
+
+    public static int addition3(byte number1 , byte number2){
 
         return number1+number2;
     }
