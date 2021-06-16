@@ -58,10 +58,12 @@ public class c2_returnMethods {
 
 
         addition(10,65);
-        int result3=addition2(10,65);
+        int result3=addition2(5,5);
         System.out.println(result3);
 
     }
+
+
 
     public static int division(int i1 , int i2){
         //return type is int
