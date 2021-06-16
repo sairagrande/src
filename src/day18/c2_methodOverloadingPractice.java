@@ -9,6 +9,8 @@ public class c2_methodOverloadingPractice {
         sum(10,10,10); //int sum method with 3 variables
         sum(10.5,5.5); //double sum
 
+        //sum("asda","sadas");
+
 
 
     }
