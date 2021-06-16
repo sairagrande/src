@@ -13,6 +13,8 @@ public class c1_practice {
 
         calculate(120,2,'%');
 
+        calculate(25,5,'-');
+
         calculate(20,30,'^'); //invalid operator : ^
 
 
@@ -32,7 +34,7 @@ public class c1_practice {
         // + - * / %
         // invalid operator
 
-        switch (operator){
+        switch (operator){//* /
             case '+' :
                 System.out.println(number1+number2);
                 break;
