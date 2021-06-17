@@ -1,6 +1,7 @@
 package day18;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class c5_DateFormats {
@@ -24,6 +25,15 @@ public class c5_DateFormats {
         //E : day of name
         //MMM jan MMMM january
         //yy :10  yyyy:2010
+
+
+        LocalDateTime localDateTime1=LocalDateTime.of(2000,9,10,11,24,29);
+        System.out.println(localDateTime1);
+
+        DateTimeFormatter dateTimeFormatter3=DateTimeFormatter.ofPattern("EEE, MM/dd hh:mm a");
+
+        String str2=localDateTime1.format(dateTimeFormatter3);
+        System.out.println(str2);
 
 
     }
