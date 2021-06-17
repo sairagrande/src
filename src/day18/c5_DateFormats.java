@@ -27,7 +27,7 @@ public class c5_DateFormats {
         //yy :10  yyyy:2010
 
 
-        LocalDateTime localDateTime1=LocalDateTime.of(2000,9,10,11,24,29);
+        LocalDateTime localDateTime1=LocalDateTime.of(2000,9,10,17,24,29);
         System.out.println(localDateTime1);
 
         DateTimeFormatter dateTimeFormatter3=DateTimeFormatter.ofPattern("EEE, MM/dd hh:mm a");
