@@ -18,7 +18,9 @@ public class c7_ListPractice {
         numberList.add(0);
 
         //just assume max number is list index 0
-        int maximum=numberList.get(0);
+        //int maximum=numberList.get(0);
+        int maximum = Integer.MIN_VALUE;  //-2147483648
+        System.out.println(Integer.MIN_VALUE);
         //create your loop that will check each number and compare with maximum number
         //if it is bigger it will reassigne to maximum
         for (int i=0; i <numberList.size() ; i++){
@@ -33,5 +35,19 @@ public class c7_ListPractice {
 
 
         //create logic that will print the minumum from arraylist
+
+        //int minumum=numberList.get(0);
+        int minumum= Integer.MAX_VALUE; //2147483647
+        System.out.println(Integer.MAX_VALUE);
+
+        for (int i =0 ; i< numberList.size() ;i++){
+            if(numberList.get(i) < minumum){
+                minumum = numberList.get(i);
+            }
+        }
+
+        System.out.println(minumum);
+
+
     }
 }
